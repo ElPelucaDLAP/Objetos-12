@@ -1,4 +1,5 @@
 import java.time.LocalDate;
+import java.util.ArrayList;
 
 public class Main {
     public static void main(String[] args) {
@@ -34,5 +35,14 @@ public class Main {
         puertoSUS.anadirBarco(barco4);
         puertoSUS.anadirBarco(barco5);
         puertoSUS.anadirBarco(barco6);
+        ArrayList test2 = puertoSUS.getCamionesEnEspera();
+        ArrayList test1 = puertoSUS.getBarcosEnEspera();
+        for (int i = 0; i<test1.size(); i++){
+            System.out.println("i");
+        }
+        for (int i = 0; i<test2.size(); i++){
+            System.out.println("j");
+        }
+        puertoSUS.cargarBarcos();
     }
 }

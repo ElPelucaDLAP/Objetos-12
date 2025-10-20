@@ -5,7 +5,13 @@ public class Barco {
         this.capacidadMaxima=capacidadMaxima;
         this.cerealGuardado=null;
     }
-
+    public boolean cargarCereal (Camiones camionQuiereCargar) {
+        double cantidadDeCereal = camionQuiereCargar.getCerealLlevado().getToneladas();
+        if (cantidadDeCereal<=(this.capacidadMaxima)){
+            this.cerealGuardado=camionQuiereCargar.getCerealLlevado();
+            return true;
+        }else return false;
+    }
     public double getCapacidadMaxima() {
         return capacidadMaxima;
     }

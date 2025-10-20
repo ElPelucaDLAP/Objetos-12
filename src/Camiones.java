@@ -13,6 +13,14 @@ public class Camiones {
         this.fechaDeCarga=fechaDeCarga;
     }
 
+    public LocalDate getFechaDeCarga() {
+        return fechaDeCarga;
+    }
+
+    public void setFechaDeCarga(LocalDate fechaDeCarga) {
+        this.fechaDeCarga = fechaDeCarga;
+    }
+
     public String getMarca() {
         return marca;
     }
